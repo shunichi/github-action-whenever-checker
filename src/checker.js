@@ -23,7 +23,7 @@ async function checkConfig(path) {
     }
   }
   if (!chronicOptionsFound) {
-    errors.unshift(`${path}: Config must have line 'set :chronic_options, hours24: true'`);
+    errors.unshift(`${path}: Must have a line 'set :chronic_options, hours24: true'`);
   }
   return errors;
 }
