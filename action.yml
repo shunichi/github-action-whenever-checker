@@ -1,0 +1,10 @@
+name: 'Config checker for whenever gem'
+description: 'Check if dangerous time formats existi in whenever config.'
+inputs:
+  configPath:
+    description: 'whenever gem config file path'
+    required: false
+    default: 'config/schedule.rb'
+runs:
+  using: 'node12'
+  main: 'src/index.js'
